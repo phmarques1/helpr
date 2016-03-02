@@ -1,0 +1,1539 @@
+html, body {
+  margin: 0;
+  font-family: "proxima-nova", sans-serif;
+  text-decoration: none; 
+  height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+br {
+  display: block;
+  content: "";
+  margin: 7px 0;
+}
+
+a {
+  color: #000;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 70px;
+    background: transparent;
+    color: #666;
+    z-index: 1000000;
+}
+
+header.clonedHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    transform: translateY(-100%);
+    border-bottom: 1px solid rgb(210,210,210);
+    transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+}
+
+body.down header.clonedHeader {
+    transform: translateY(0);
+}
+
+.logo {
+  float: left;
+  margin: 20px 5px 0;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  color: #fff;
+  font-weight: 900;
+}
+
+.logo-fixed {
+  color: rgb(30,30,30,0);
+}
+
+
+/*.icons-fixed {
+  background-size: 50px 50px;
+  width: 25px;
+  height: 25px;
+  float: left;
+  opacity: 0.8;
+  margin: 8px 10px 0 0;
+}
+
+.icon-medium-fixed {
+  margin: 8px 0 0 0;
+}
+
+.icons-fixed:hover {
+  opacity: 1.0;
+}*/
+
+
+.top-fixed {
+  max-width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 1% 0;
+}
+
+.profile-fixed {
+  background-size: 74px 74px;
+  width: 37px;
+  height: 37px;
+}
+
+.profile-hidden {
+  margin: 12px auto 0;
+  text-align: center;
+  background: url('../img/profile-fixed@2x.png') no-repeat center;
+  background-size: 37px 37px;
+  width: 37px;
+  height: 37px;
+}
+
+.contact-fixed {
+  font-family: 'Open Sans', 'sans serif';
+  margin: 0 10px;
+  text-align: center;
+  padding: 0.6em 1.5em;
+  background-color: transparent;
+  text-shadow: none;
+  color: #605ca8;
+  border: 2px solid #605ca8;
+  border-radius: 4px;
+  text-decoration: none;
+  float: right;
+  line-height: 20px;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.contact-fixed:hover {
+  opacity: 1.0;
+}
+
+.contact-top {
+  margin: 17px 10px;
+  text-align: center;
+  padding: 0.6em 1.5em;
+  background-color: transparent;
+  text-shadow: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  line-height: 20px;
+  float: right;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+.contact-top:hover {
+  background-color: rgba(0,0,0,.4);
+}
+
+.background {
+    background: url('../img/bg-top.png');
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+.top {
+  min-width: 100%;
+  max-height: 70px;
+  padding: 0 1% 0;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 100000;
+}
+
+.fullscreen,
+.content-a {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height:auto;
+    min-height:100%;
+}
+
+/* content centering styles */
+.content-a {
+  display:table;
+}
+.content-b {
+  display:table-cell;
+  position:relative;
+  vertical-align:middle;
+  text-align:center;
+}
+
+.arrows {
+    bottom: 2%;
+    left:0;
+    right:0;
+    margin: 0 auto 0;
+    position: absolute;
+    text-align: center;
+}
+
+.arrow {
+  max-height: 12px;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+h1 {
+  max-width: 1000px;
+  margin: 8px auto 0;
+  text-align: center;
+  color: #fff;
+  font-size: 3.4em;
+  font-weight: 900;
+  letter-spacing: 3px; 
+}
+
+.tagline {
+  max-width: 700px;
+  margin: 12px auto 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 32px;
+}
+
+.field-wrap input, 
+textarea {
+  height: 50px;
+  width: 380px;
+  padding: 10px 15px;
+  outline: 0;
+  border: #fff;
+  border-radius: 3px;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+
+.field-wrap button {
+  padding: 10px 5px;
+  margin-left: 5px;
+  color: #fff;
+  background-color: #3CB878;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border-radius: 3px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #3CB878;
+}
+
+.field-wrap button:hover {
+  background-color: #48bf7c;
+}
+
+
+
+
+
+
+.introduction {
+  width: 100%;
+  height: 820px;
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 8% 0;
+  overflow: hidden;
+
+}
+
+.intro, 
+.cleaning,
+.groceries,
+.helpr,
+.laundry,
+.services,
+.checkout,
+.partners {
+  font-size: 1.5em;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+/*.note-about-me:before {
+  content: "";
+  background-image: url('../img/note@2x.png');
+  background-size: 27px 27px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}*/
+
+.intro-description,
+.checkout-description,
+.partners-description {
+  margin: 15px auto 60px;
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.05em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #717171;
+}
+
+.iphone-1 {
+  max-height: 480px;
+}
+
+.house-cleaning,
+.do-laundry {
+  width: 100%;
+  padding-top: 42px;
+  background-color: #F9615B;
+  text-align: center;
+  overflow: hidden;
+  height: 732px;
+}
+
+.main-cleaning-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cleaning-wrap,
+.laundry-wrap {
+   float: left;
+}
+
+.cleaning,
+.laundry {
+  color: #fff;
+  margin: 270px auto 20px;
+  text-align: center;
+}
+
+.cleaning-description,
+.laundry-description {
+  font-size: 1.05;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #fff;
+  max-width: 380px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cleaning:before {
+  content: "";
+  background-image: url('../img/cleaning-icon.png');
+  background-size: 27px 27px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 42px;
+}
+
+.iphone-group {
+  margin-top: 50px;
+  max-height: 640px;
+  float: right;
+}
+
+
+.groceries-delivery {
+  width: 100%;
+  padding-top: 42px;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+  height: 822px;
+}
+
+.main-groceries-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.groceries-wrap,
+.services-wrap {
+   float: right;
+}
+
+.groceries {
+  color: #000;
+  margin: 270px auto 20px;
+  text-align: center;
+}
+
+.groceries-description,
+.helpr-description,
+.services-description {
+  font-size: 1.05;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #717171;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.groceries:before {
+  content: "";
+  background-image: url('../img/groceries-icon.png');
+  background-size: 21px 28px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 37px;
+}
+
+.iphone-2 {
+  margin-top: 30px;
+  margin-left: 5%;
+  max-height: 725px;
+  float: left;
+}
+
+.helpr-free {
+  width: 100%;
+  height: 350px;
+  background-color: #448CCB;
+}
+
+.helpr-wrap {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 76px;
+}
+
+.helpr,
+.early {
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0px auto 20px;
+}
+
+.helpr-description {
+  color: #fff;
+  margin-bottom: 30px;
+
+}
+
+.emojis-group {
+  text-align: center;
+}
+
+.emojis {
+  max-height: 38px;
+}
+
+.main-laundry-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.do-laundry {
+  height: 900px;
+  background-color: #fff;
+}
+
+.laundry {
+  color: #000;
+}
+
+.laundry-description {
+  color: #717171;
+  max-width: 480px;
+}
+
+.laundry:before {
+  content: "";
+  background-image: url('../img/laundry-icon.png');
+  background-size: 24px 30px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 42px;
+}
+
+.iphone-3 {
+  margin-top: 50px;
+  max-height: 756px;
+  float: right;
+}
+
+.home-services {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services {
+  margin: 250px auto 20px;
+  max-width: 340px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.services:before {
+  content: "";
+  background-image: url('../img/services-icon.png');
+  background-size: 28px 28px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.iphone-4 {
+  margin-top: 0;
+  margin-left: 8%;
+  max-height: 703px;
+  float: left;
+}
+
+
+.app-checkout {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main-checkout-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.checkout {
+  margin-top: 110px;
+}
+
+.checkout-description {
+  max-width: 510px;
+  margin-bottom: 40px;
+}
+
+.screens {
+  max-height: 740px;
+}
+
+.early-access {
+  width: 100%;
+  height: 220px;
+  background-color: #605CA8;
+}
+
+.early-wrap {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 66px;
+}
+
+.early {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.app-partners {
+  width: 100%;
+  background-color: #fff;
+  height: 380px;
+}
+
+.partners-wrap {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.partners {
+  margin-top: 155px;
+}
+
+.partners-description {
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.instacart {
+  max-height: 40px;
+  margin-right: 50px;
+}
+
+.handy {
+  max-height: 64px;
+  margin-right: 50px;
+}
+
+.fc {
+  max-height: 33px;
+}
+
+footer {
+  height: 70px;
+  border-top: 1px #e6e6e6 solid;
+  background-color: #fff;
+  color: #a0a0a0;
+  text-align: center;
+  padding-top: 15px;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.foot {
+  display: inline;
+}
+
+.heart {
+  color: #ed0f04;
+}
+
+
+/**************************************************************** 
+*****************************************************************
+*****************************************************************
+
+IMAGE AND ICONS @2X DOWNSIZING
+
+*****************************************************************
+*****************************************************************
+****************************************************************/
+
+.logo-header {
+  background-size: 274px 274px;
+  max-height: 137px;
+}
+
+.green-line {
+  background-size: 672px 16px;
+  width: 336px;
+  height: 8px;
+}
+
+.purple-line {
+  background-size: 416px 16px;
+  width: 208px;
+  height: 8px;
+}
+
+.ccb {
+  background-size: 320px 70px;
+  width: 160px;
+  height: 35px;
+}
+
+.ccb-devices {
+  background-size: 2868px 1582px;
+  max-height: 791px; 
+  margin: 30px 0 60px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.zep-logo {
+  background-size: 216px 102px;
+  width: 108px;
+  height: 51px;  
+}
+
+.zep-device {
+  background-size: 1358px 652px;
+  max-height: 326px;  
+  margin-top: 35px;
+}
+
+.flesy-logo {
+  background-size: 306px 128px;
+  max-height: 64px;   
+  margin-top: 235px; 
+}
+
+.flesy-top, .flesy-down {
+  background-size: 650px 1348px;
+  max-height: 674px;    
+}
+
+.sensorize-logo {
+  background-size: 532px 90px;
+  max-height: 50px;
+  padding-left: 6%; 
+  margin-bottom: 15px;  
+}
+
+.sensorize-device {
+  background-size: 1254px 1254px;
+  max-height: 627px;   
+}
+
+.agroeste-logo {
+  background-size: 436px 124px;
+  max-height: 62px;
+}
+
+.agroeste-device {
+  background-size: 1304px 1188px;
+  max-height: 594px;
+  padding-bottom: 30px; 
+}
+
+
+
+
+
+
+
+/**************************************************************** 
+*****************************************************************
+*****************************************************************
+
+MEDIA QUERIES
+
+*****************************************************************
+*****************************************************************
+****************************************************************/
+
+@media screen and (max-width: 1153px) and (min-width: 769px) {
+
+.top {
+  display: block;
+}
+
+.note {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 1060px;
+}
+
+.left-elem {
+  opacity: 0.23;
+}
+
+.right-elem {
+  opacity: 0.23;
+}
+
+.zep-wrap {
+  padding-top: 50px;
+  height: 710px;
+}
+
+.flesy-container {
+  flex-direction: column;
+}
+
+.flesy-text {
+  max-width: 700px;
+}
+
+.flesy-d {
+  display: none;
+}
+
+.flesy-t {
+  margin-top: 45px;
+  margin-right: 0;
+  order: 1;
+  padding: 0 5% 0;
+}
+
+.flesy-logo {
+  margin-top: 50px;
+}
+
+.floating {
+  padding: 0 1% 0;
+}
+
+.sensorize-wrap {
+  padding-top: 60px;
+  height: 770px;
+}
+
+.sensorize-description {
+  text-align: center;
+  margin: 0 auto 30px;
+  float: none;
+}
+
+.sensorize-mockup {
+  float: none;
+}
+
+.sensorize-logo {
+  padding: 0 8% 0;
+}
+
+.sensorize-text {
+  text-align: center;
+}
+
+footer {
+  padding-top: 28px;
+}
+
+.foot {
+  font-size: 1.25em;
+}
+
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+.top {
+  display: block;
+}
+
+.note {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 1060px;
+}
+
+.desc {
+  font-size: 1.8em;
+    margin-bottom: 50px;
+}
+
+.quote {
+  padding: 0 10% 0;
+  font-size: 1.4em;
+}
+
+.left-elem {
+  opacity: 0.23;
+}
+
+.right-elem {
+  opacity: 0.23;
+}
+
+.zep-wrap {
+  padding-top: 50px;
+  height: 710px;
+}
+
+.flesy-container {
+  flex-direction: column;
+}
+
+.flesy-text {
+  max-width: 700px;
+}
+
+.flesy-d {
+  display: none;
+}
+
+.flesy-t {
+  margin-top: 45px;
+  margin-right: 0;
+  order: 1;
+  padding: 0 5% 0;
+}
+
+.flesy-logo {
+  margin-top: 50px;
+}
+
+.floating {
+  padding: 0 1% 0;
+}
+
+.sensorize-wrap {
+  padding-top: 60px;
+  height: 770px;
+}
+
+.sensorize-description {
+  text-align: center;
+  margin: 0 auto 30px;
+  float: none;
+}
+
+.sensorize-mockup {
+  float: none;
+}
+
+.sensorize-logo {
+  padding: 0 8% 0;
+}
+
+.sensorize-text {
+  text-align: center;
+}
+
+footer {
+  padding-top: 28px;
+}
+
+.foot {
+  font-size: 1.25em;
+}
+
+}
+
+
+
+@media screen and (max-width: 480px) and (min-width: 321px) {
+
+
+.logo-header {
+  background-size: 180x 180px;
+  max-height: 90px;
+}
+
+.arrow-top {
+    background-size: 46px 24px;
+    max-height: 12px;
+}
+
+h1 {
+  font-size: 1.25em;
+  letter-spacing: 1px;
+}
+
+.desc {
+  margin: 3px 0 20px;
+  font-size: 1em;
+}
+
+.quote {
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 0 6.5% 0;
+}
+
+.contact-fixed {
+  padding: 0.6em 0.6em;
+  margin-right: 2px;
+}
+
+.contact-top {
+  padding: 0.6em 0.6em;
+  margin-right: 5px;
+}
+
+.icons {
+  margin-top: 25px;
+}
+
+.icon-medium-fixed {
+  margin-top: 8px;
+}
+
+.note {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 1125px;
+}
+
+.note-about-me, .recent-work {
+  font-size: 1.25em;
+}
+
+.note-about-me:before, .recent-work:before {
+  background-size: 22px 22px;
+  padding-left: 35px;
+}
+
+.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+  font-size: 1.05em;
+  line-height: 1.55;
+}
+
+.work-text {
+  padding: 0 5% 0;
+  margin-bottom: 40px;
+}
+
+.left-elem {
+  margin: -700px 0 0 -55%;
+  background-size: 304px 742px;
+  width: 304px;
+  height: 742px;
+  float: left;
+  opacity: 0.23;
+}
+
+.right-elem {
+  margin: -1420px -55% 0 0;
+  background-size: 353px 852px;
+  width: 353px;
+  height: 852px;
+  float: right;
+  opacity: 0.23;
+}
+
+.zep-wrap {
+  padding-top: 60px;
+  height: 650px;
+}
+
+.zep-device {
+  padding: 0 2% 0;
+}
+
+.flesy-container {
+  flex-direction: column;
+}
+
+.flesy-d {
+  display: none;
+}
+
+.flesy-t {
+  margin-top: 45px;
+  margin-right: 0;
+  order: 1;
+  padding: 0 5% 0;
+}
+
+.flesy-logo {
+  margin-top: 50px;
+}
+
+.floating {
+  padding: 0 3% 0;
+}
+
+.sensorize-wrap {
+  padding-top: 60px;
+  height: 820px;
+}
+
+.sensorize-description {
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+.sensorize-logo {
+  padding: 0 8% 0;
+}
+
+.sensorize-text {
+  text-align: center;
+}
+
+.agroeste-container {
+  padding-top: 55px;
+}
+
+footer {
+  height: 50px;
+  padding-top: 20px;
+  font-size: 0.95em;
+}
+
+.foot {
+  display: inline;
+}
+
+.chat {
+  font-size: 2.5em;
+}
+
+p.more {
+  margin: 0 0 30px;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+
+
+}
+
+/***************** 
+
+FIM 
+
+*****************/
+
+
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 568px) {
+
+
+        /***********************************
+
+        iPhone 5
+
+        ************************************/
+
+.logo-header {
+  background-size: 180x 180px;
+  max-height: 90px;
+}
+
+.arrow-top {
+    background-size: 46px 24px;
+    max-height: 12px;
+}
+
+h1 {
+  font-size: 1.25em;
+  letter-spacing: 1px;
+}
+
+.desc {
+  margin: 3px 0 20px;
+  font-size: 1em;
+}
+
+.quote {
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 0 6.5% 0;
+}
+
+.contact-fixed {
+  padding: 0.6em 0.6em;
+  margin-right: 2px;
+}
+
+.contact-top {
+  padding: 0.6em 0.6em;
+  margin-right: 5px;
+}
+
+.icons {
+  margin-top: 25px;
+}
+
+.icon-medium-fixed {
+  margin-top: 8px;
+}
+
+.note {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 1415px;
+}
+
+.note-about-me, .recent-work {
+  font-size: 1.25em;
+}
+
+.note-about-me:before, .recent-work:before {
+  background-size: 22px 22px;
+  padding-left: 35px;
+}
+
+.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+  font-size: 1.05em;
+  line-height: 1.55;
+}
+
+.work-text {
+  padding: 0 5% 0;
+  margin-bottom: 40px;
+}
+
+.left-elem {
+  margin: -700px 0 0 -55%;
+  background-size: 304px 742px;
+  width: 304px;
+  height: 742px;
+  float: left;
+  opacity: 0.23;
+}
+
+.right-elem {
+  margin: -1420px -55% 0 0;
+  background-size: 353px 852px;
+  width: 353px;
+  height: 852px;
+  float: right;
+  opacity: 0.23;
+}
+
+.zep-wrap {
+  padding-top: 60px;
+  height: 650px;
+}
+
+.zep-device {
+  padding: 0 2% 0;
+}
+
+.flesy-container {
+  flex-direction: column;
+}
+
+.flesy-d {
+  display: none;
+}
+
+.flesy-t {
+  margin-top: 45px;
+  margin-right: 0;
+  order: 1;
+  padding: 0 5% 0;
+}
+
+.flesy-logo {
+  margin-top: 50px;
+}
+
+.floating {
+  padding: 0 3% 0;
+}
+
+.sensorize-wrap {
+  padding-top: 60px;
+  height: 770px;
+}
+
+.sensorize-description {
+  text-align: center;
+  margin: 0 0 35px;
+}
+
+.sensorize-logo {
+  padding: 0 8% 0;
+}
+
+.sensorize-text {
+  text-align: center;
+}
+
+.agroeste-container {
+  padding-top: 55px;
+}
+
+footer {
+  padding-top: 20px;
+  font-size: 0.95em;
+}
+
+.foot {
+  display: inline;
+}
+
+.chat {
+  font-size: 2.5em;
+}
+
+p.more {
+  margin: 0 0 30px;
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+
+
+
+}
+
+
+
+/***************** 
+
+FIM 
+
+*****************/
+
+@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
+.note {
+  height: 1285px;
+}
+
+footer {
+  padding-top: 10px;
+}
+
+}
+
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  
+
+        /***********************************
+
+        iPhone 6
+
+        ************************************/
+
+.arrow-top {
+    background-size: 46px 24px;
+    max-height: 12px;
+}
+
+.logo-header {
+  background-size: 274px 274px;
+  max-height: 137px;
+}
+
+h1 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.desc {
+  margin: 0 0 20px;
+  font-size: 1.1em;
+}
+
+.note {
+  height: 1395px;
+}
+
+.note-about-me, .recent-work {
+  font-size: 1.4em;
+}
+
+.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.work-text {
+  padding: 0 12% 0;
+}
+
+.zep-wrap {
+  height: 660px;
+}
+
+.sensorize-wrap {
+  height: 785px;
+}
+
+.agroeste-device {
+  padding-bottom: 35px;
+}
+
+p.more {
+  padding: 0 20% 0;
+}
+
+footer {
+  padding-top: 20px;
+  height: 50px;
+  font-size: 0.95em;
+}
+
+}
+
+/***************** 
+
+FIM 
+
+*****************/
+
+
+
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 3) {
+ 
+        /***********************************
+
+        iPhone 6 Plus Portrait
+
+        ************************************/
+
+.logo-header {
+  background-size: 274px 274px;
+  max-height: 137px;
+}
+
+.arrow-top {
+    background-size: 54px 32px;
+    max-height: 16px;
+}
+
+h1 {
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.desc {
+  margin: 0 0 30px;
+  font-size: 1.25em;
+}
+
+.quote {
+  font-size: 1.15em;
+  padding: 0 12% 0;
+}
+
+.note {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  height: 1725px;
+}
+
+.note-about-me, .recent-work {
+  font-size: 1.5em;
+}
+
+.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
+  font-size: 1.3em;
+}
+
+.work-text {
+  padding: 0 10% 0;
+}
+
+.ccb-devices {
+  margin-bottom: 75px;
+}
+
+.zep-wrap {
+  padding-top: 80px;
+  height: 770px;
+}
+
+.flesy-logo {
+  margin-top: 60px;
+}
+
+.sensorize-description {
+  margin-top: 10px;
+}
+
+.sensorize-wrap {
+  height: 860px;
+}
+
+.agroeste-container {
+  padding-top: 60px;
+}
+
+.agroeste-device {
+  padding-bottom: 40px;
+}
+
+.contact-wrap {
+  padding-top: 45px;
+}
+
+.chat {
+  font-size: 2.7em;
+}
+
+p.more {
+  padding: 0 15% 0;
+  font-size: 1.25em;
+}
+
+footer {
+  padding-top: 19px;
+  height: 50px;
+  font-size: 1em;
+}
+
+
+
+}
+
+/***************** 
+
+FIM 
+
+*****************/
+
+
+
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 3) {
+
+        /***********************************
+
+        iPhone 6 Plus Landscape
+
+        ************************************/
+
+
+
+
+}
+
+/***************** 
+
+FIM 
+
+*****************/
+
+
+

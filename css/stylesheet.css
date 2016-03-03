@@ -274,7 +274,7 @@ h1 {
   margin: 12px auto 30px;
   text-align: center;
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1.30em;
   font-weight: 300;
   letter-spacing: 1.5px;
   line-height: 32px;
@@ -332,9 +332,10 @@ textarea {
 .laundry,
 .services,
 .checkout,
-.partners {
-  font-size: 1.5em;
-  color: black;
+.partners,
+.reclaim {
+  font-size: 1.55em;
+  color: #3c4858;
   font-weight: 500;
   letter-spacing: 1.5px;
 }
@@ -352,12 +353,12 @@ textarea {
 .checkout-description,
 .partners-description {
   margin: 15px auto 60px;
-  max-width: 700px;
+  max-width:740px;
   text-align: center;
-  font-size: 1.05em;
+  font-size: 1.10em;
   line-height: 1.7;
-  font-weight: 300;
-  color: #717171;
+  font-weight: 400;
+  color: #8492a6;
 }
 
 .iphone-1 {
@@ -387,19 +388,19 @@ textarea {
 .cleaning,
 .laundry {
   color: #fff;
-  margin: 270px auto 20px;
-  text-align: center;
+  margin: 250px auto 20px;
+  text-align: left;
 }
 
 .cleaning-description,
 .laundry-description {
-  font-size: 1.05;
+  font-size: 1.10em;
   line-height: 1.7;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   max-width: 380px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .cleaning:before {
@@ -424,7 +425,7 @@ textarea {
   background-color: #fff;
   text-align: center;
   overflow: hidden;
-  height: 822px;
+  height: 902px;
 }
 
 .main-groceries-wrap {
@@ -438,21 +439,25 @@ textarea {
 }
 
 .groceries {
-  color: #000;
-  margin: 270px auto 20px;
-  text-align: center;
+  margin: 280px auto 20px;
+  text-align: left;
 }
 
 .groceries-description,
 .helpr-description,
-.services-description {
-  font-size: 1.05;
+.services-description,
+.reclaim-description {
+  font-size: 1.10em;
   line-height: 1.7;
-  font-weight: 300;
-  color: #717171;
-  max-width: 500px;
+  font-weight: 400;
+  color: #8492a6;
+  max-width: 520px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+}
+
+.groceries-description {
+  max-width: 460px;
 }
 
 .groceries:before {
@@ -467,7 +472,7 @@ textarea {
 .iphone-2 {
   margin-top: 30px;
   margin-left: 5%;
-  max-height: 725px;
+  max-height: 825px;
   float: left;
 }
 
@@ -478,9 +483,9 @@ textarea {
 }
 
 .helpr-wrap {
-  max-width: 450px;
+  max-width: 490px;
   margin: 0 auto;
-  padding-top: 76px;
+  padding-top: 72px;
 }
 
 .helpr,
@@ -495,6 +500,7 @@ textarea {
 .helpr-description {
   color: #fff;
   margin-bottom: 30px;
+  text-align: center;
 
 }
 
@@ -507,8 +513,17 @@ textarea {
 }
 
 .main-laundry-wrap {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
+}
+
+.laundry-wrap {
+  margin-left: 50px;
+}
+
+.laundry {
+  color: #3c4858;
+  margin-top: 330px
 }
 
 .do-laundry {
@@ -516,13 +531,10 @@ textarea {
   background-color: #fff;
 }
 
-.laundry {
-  color: #000;
-}
-
 .laundry-description {
-  color: #717171;
-  max-width: 480px;
+  color: #8492a6;
+  max-width: 400px;
+  font-size: 1.10em;
 }
 
 .laundry:before {
@@ -545,11 +557,19 @@ textarea {
   margin: 0 auto;
 }
 
+.main-services-wrap {
+  margin-right: 50px;
+}
+
 .services {
-  margin: 250px auto 20px;
-  max-width: 340px;
+  margin: 210px 0 20px;
+  max-width: 380px;
   line-height: 1.4;
-  text-align: center;
+  text-align: left;
+}
+
+.services-description {
+  max-width: 420px;
 }
 
 .services:before {
@@ -587,35 +607,81 @@ textarea {
 }
 
 .checkout-description {
-  max-width: 510px;
+  max-width: 530px;
   margin-bottom: 40px;
 }
 
 .screens {
-  max-height: 740px;
+  max-height: 800px;
 }
 
 .early-access {
   width: 100%;
-  height: 220px;
-  background-color: #605CA8;
+  height: 230px;
+  background-color: #605ca8;
+}
+
+.main-early-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reclaim-life {
+  height: 400px;
+  border-top: 1px rgb(230,230,230) solid;
+    border-bottom: 1px rgb(230,230,230) solid;
+  background-color: #FBFBFA;
+}
+
+.rec {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.reclaim-wrap {
+  margin: 120px auto 0;
+  max-width: 400px;
+  float: left;
+
+}
+
+.reclaim {
+}
+
+.reclaim-description {
+
+}
+
+.people-icon {
+float: right;
+}
+
+.people {
+  margin-top: 70px;
+  max-height: 250px;
 }
 
 .early-wrap {
   text-align: center;
   margin: 0 auto;
-  padding-top: 66px;
+  padding-top: 60px;
 }
 
 .early {
   font-size: 1.6em;
   font-weight: 500;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+input[type="email-bottom"] {
+  border: 1px rgb(230,230,230) solid;
 }
 
 .app-partners {
   width: 100%;
   background-color: #fff;
-  height: 380px;
+  height: 360px;
 }
 
 .partners-wrap {
@@ -624,7 +690,7 @@ textarea {
 }
 
 .partners {
-  margin-top: 155px;
+  margin-top: 140px;
 }
 
 .partners-description {

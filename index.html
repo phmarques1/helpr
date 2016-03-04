@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
     <meta name="author" content="Pedro Henrique Marques">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta property="og:title" content="Pedro Henrique Marques | Product Manager & Entrepreneur">
@@ -22,26 +23,15 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/main.js"></script>
-
 </head>
 
 <body>
 
 
-<header class="clonedHeader">
-    <nav class="top-fixed">
-
-            <a href="mailto:marques.ph@gmail.com" class="contact-fixed">GET EARLY ACCESS</a>
-
-            <a href="#"><div class="profile-hidden"></div></a>
-    </nav>
-</header>
-
-
 <div class="fullscreen background">
     <nav class="top">
     <h2 class ="logo">HELPR</h2>
-        <a href="mailto:marques.ph@gmail.com" class="contact-top">GET EARLY ACCESS</a>
+        <a href="#" class="contact-top">GET EARLY ACCESS</a>
     </nav>
     <div class="arrows bounce"><img src="img/arrow.png" class="arrow"/></div>
     <div class="content-a">
@@ -63,7 +53,7 @@
         <h2 class="intro">Be less busy</h2>
         <p class="intro-description">Helpr is a free, messaging-based, on demand service that takes the pain out of household activities. From delivering your groceries to having a pumbler fix your kitchen sink drain, we’ve got you covered. Make a request by instant messaging and consider it done. Hassle-free</p>
         <div class>
-            <img src="img/be-less-busy.png" class="iphone-1" alt="Helpr - Your on demand assistant for household chores and services"/>
+            <img src="img/iphone-top.png" class="iphone-1" alt="Helpr - Your on demand assistant for household chores and services"/>
         </div>
     </div>
 </section>
@@ -71,6 +61,7 @@
 <section class="house-cleaning">
     <div class="main-cleaning-wrap">
         <div class="cleaning-wrap">
+            <p class="cleaning-title">Cleaning</p>
             <h2 class="cleaning">We'll clean your home</h2>
             <p class="cleaning-description">So... your home is a mess and you’re too busy to clean it yourself? We’ll find you a top rated cleaner and send him/her to make your home spotless again.</p>
         </div>
@@ -82,6 +73,7 @@
 <section class="groceries-delivery">
     <div class="main-groceries-wrap">
         <div class="groceries-wrap">
+            <p class="groceries-title">Groceries</p>
             <h2 class="groceries">We'll buy & deliver your groceries</h2>
             <p class="groceries-description">We know how painful it can be to go to the nearest market just to buy the missing ingredients to that super fancy dinner you promised to cook for friends and family. How about those long lines at the checkout? Yea. It sucks. That’s why we’ll do it for you.</p>
         </div>
@@ -103,6 +95,7 @@
 <section class="do-laundry">
     <div class="main-laundry-wrap">
         <div class="laundry-wrap">
+            <p class="laundry-title">Laundry</p>
             <h2 class="laundry">We'll do your laundry</h2>
             <p class="laundry-description">We bet there are more interesting things to do other than your laundry, right? Yeah, we thought so. Spend your time doing the things you love. Leave the boring stuff to us.</p>
         </div>
@@ -114,6 +107,7 @@
 <section class="home-services">
     <div class="main-services-wrap">
         <div class="services-wrap">
+            <p class="services-title">Other home services</p>
             <h2 class="services">We’ll find you a painter, a pumbler and more…</h2>
             <p class="services-description">Finding a good home service professional can be very time consuming and frustrating. We’re on a mission to simplifying this process by making it as easy as sending a text message.</p>
         </div>
@@ -143,10 +137,14 @@
 <section class="app-partners">
     <div class="partners-wrap">
         <h2 class="partners">We partner with leading service providers</h2>
-        <p class="partners-description">Your Helpr will get you the best professionals from Instacart, Handy and FlyCleaners. Now sit back, relax and enjoy your life.</p>
-        <img src="img/instacart.png" class="instacart" alt="Helpr - Instacart" />
-        <img src="img/handy.png" class="handy" alt="Helpr - Handy" />
-        <img src="img/flycleaners.png" class="fc" alt="Helpr - Flycleaners" />
+        <p class="partners-description">Your Helpr will get you the best professionals from Instacart, Handy, FlyCleaners, TaskRabbit and Cleanly. Now sit back, relax and enjoy your life.</p>
+        <div class="companies">
+            <img src="img/instacart.png" class="instacart" alt="Helpr - Instacart" />
+            <img src="img/handy.png" class="handy" alt="Helpr - Handy" />
+            <img src="img/flycleaners.png" class="fc" alt="Helpr - Flycleaners" />
+            <img src="img/taskrabbit.png" class="taskrabbit" alt="Helpr - Taskrabbit" />
+            <img src="img/cleanly.png" class="cleanly" alt="Helpr - Cleanly" />
+        </div>
     </div>
 </section>
 <section class="early-access">
@@ -163,16 +161,25 @@
     </div>
 </section>
 <footer>
-    <div>
-        <p class="foot">Made with <span class="heart">♥</span> in NYC<br><br>Copyright © Helpr, 2016. All rights reserved.</p>
+    <div class="footer-wrap">
+        <div class="email-contact">
+            <a href="mailto:hi@joinhelpr.com" class="contact-bottom">hi@joinhelpr.com</a>
+        </div>
+        <div class="footer-right">
+            <p class="footer-p">Made with <span class="heart">♥</span> in NYC<br>Copyright © Helpr, 2016. All rights reserved.</p>
+        </div>
+        <div class="mixpanel">
+            <div class="mix-wrap">
+                <a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics"/></a>
+            </div>
+        </div>
     </div>
 </footer>
 
-
-
-
-
 <script src="js/wow.min.js"></script>
+<script src="/scripts/env.js"></script>
+<script src="/scripts/email.js"></script>
+<script src="/scripts/sweetalert2.min.js"></script>
 <script>
  new WOW().init();
 </script>

@@ -49,31 +49,30 @@ $(window).resize(backgroundResize);
 $(window).focus(backgroundResize);
 backgroundResize();
 
-
-
-   $(document).ready(function() {
-        var $header = $("header"),
-            $clone = $header.before($header.clone().addClass("clonedHeader"));
-        
-        $(window).on("scroll", function() {
-        
-            var fromTop = $(window).scrollTop();
-            $("body").toggleClass("down", (fromTop > 470));
-
-        });
-
-
+$(document).ready(function() {
+    var $header = $("header"),
+        $clone = $header.before($header.clone().addClass("clonedHeader"));
+    
+    $(window).on("scroll", function() {
+    
+        var fromTop = $(window).scrollTop();
+        $("body").toggleClass("down", (fromTop > 470));
 
     });
 
+});
+
 $(document).ready(function(){
     
-$('a .profile-hidden').click(function(){
-    $("html, body").animate({ scrollTop: 0 }, 600);
-    return false;
+$(".contact-top").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".early-access").offset().top
+    }, 2000);
 });
     
 });
+
+
 /* 
 $(document).ready(function() {
 

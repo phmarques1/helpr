@@ -281,7 +281,9 @@ textarea {
 .services,
 .checkout,
 .partners,
-.reclaim {
+.reclaim,
+.status,
+.reorder {
   font-size: 1.55em;
   color: #3c4858;
   font-weight: 500;
@@ -393,7 +395,9 @@ textarea {
 .groceries-description,
 .helpr-description,
 .services-description,
-.reclaim-description {
+.reclaim-description,
+.status-description,
+.reorder-description {
   font-size: 1.10em;
   line-height: 1.7;
   font-weight: 400;
@@ -605,31 +609,60 @@ textarea {
 }
 
 .reclaim-life {
-  height: 400px;
+  height: 1000px;
   border-top: 1px rgb(230,230,230) solid;
   border-bottom: 1px rgb(230,230,230) solid;
   background-color: #FBFBFA;
 }
 
 .rec {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.reclaim-wrap {
-  margin: 120px auto 0;
-  max-width: 400px;
-  float: left;
-
+.status-main,
+.reorder-main,
+.reclaim-main {
+  max-width: 800px;
+  height: 320px;
+  margin: 0 auto;
 }
 
-.people-icon {
-float: right;
+.reclaim-wrap,
+.status-wrap {
+  margin: 90px auto 0;
+  max-width: 400px;
+  float: left;
+}
+
+.people-icon, 
+.status-icon {
+  float: right;
+}
+
+.reorder-wrap {
+  margin:90px auto 0;
+  max-width: 400px;
+  float: right;
+}
+
+.reorder-icon {
+  float: left;
 }
 
 .people {
+  margin-top: 50px;
+  max-height: 210px;
+}
+
+.reorder-ico {
   margin-top: 70px;
-  max-height: 250px;
+  max-height: 190px;
+}
+
+.status-ico {
+  margin-top: 120px;
+  max-height: 145px;
 }
 
 .early-wrap {
@@ -752,7 +785,6 @@ footer {
 .heart {
   color: #ed0f04;
 }
-
 
 
 

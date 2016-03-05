@@ -775,21 +775,14 @@ MEDIA QUERIES
 *****************************************************************
 ****************************************************************/
 
-@media screen and (max-width: 1153px) and (min-width: 769px) {
-
-.top {
-  display: block;
-}
-
+/*@media screen and (max-width: 1153px) and (min-width: 769px) {
 
 
 }
+*/
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
 
-.top {
-  display: block;
-}
 
 .groceries-description,
 .helpr-description,
@@ -988,7 +981,8 @@ textarea {
 .laundry-description,
 .status-description,
 .reorder-description,
-.reclaim-description {
+.reclaim-description,
+.partners-description {
   max-width: 520px;
   text-align: center;
   font-size: 1.1em;
@@ -1273,7 +1267,8 @@ textarea {
 .laundry-description,
 .status-description,
 .reorder-description,
-.reclaim-description {
+.reclaim-description,
+.partners-description {
   max-width: 520px;
   text-align: center;
   font-size: 1em;
@@ -1308,7 +1303,7 @@ textarea {
 }
 
 .app-partners {
-  height: 775px;
+  height: 735px;
 }
 
 .early-access {
@@ -1567,7 +1562,7 @@ textarea {
 }
 
 .app-partners {
-  height: 740px;
+  height: 735px;
 }
 
 .early-access {
@@ -1639,28 +1634,73 @@ textarea {
   font-size: 1.2em;
 }
 
+.intro, 
+.cleaning,
+.groceries,
+.helpr,
+.laundry,
+.services,
+.checkout,
+.partners,
+.reclaim,
+.status,
+.reorder {
+  font-size: 1.50em;
+  line-height: 1.5em;
+}
+
+.intro {
+  margin-top: 55px;
+}
+
+.early {
+  font-size: 1.2em;
+}
+
+.intro-description,
+.groceries-description,
+.helpr-description,
+.services-description,
+.reclaim-description,
+.status-description,
+.reorder-description,
+.cleaning-description,
+.laundry-description,
+.status-description,
+.reorder-description,
+.reclaim-description,
+.partners-description {
+  max-width: 520px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.intro-description {
+  margin-bottom: 50px;
+}
+
 .introduction {
-  height: 1005px;
+  height: 1070px;
 }
 
 .house-cleaning {
-  height: 627px;
+  height: 675px;
 }
 
 .groceries-delivery {
-  height: 1175px;
+  height: 1250px;
 }
 
 .helpr-free {
-  height: 340px;
+  height: 405px;
 }
 
 .do-laundry {
-  height: 1055px;
+  height: 1080px;
 }
 
 .reclaim-life {
-  height: 1190px;
+  height: 1330px;
 }
 
 .app-partners {
@@ -1670,24 +1710,19 @@ textarea {
 .partners {
   margin: 65px auto 0;
   max-width: 300px;
-  line-height: 1.65em;
 }
 
 .early-access {
   height: 280px;
 }
 
-.early {
-  font-size: 1.2em;
-}
-
 .status-main {
-  height: 280px;
+  height: 300px;
 }
 
 .reorder-main,
 .reclaim-main {
-  height: 297px;
+  height: 355px;
 }
 
 .instacart,

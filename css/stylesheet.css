@@ -62,22 +62,6 @@ body.down header.clonedHeader {
   font-weight: 900;
 }
 
-.logo-fixed {
-  float: left;
-  letter-spacing: 2px;
-  font-size: 1.3em;
-  color: #000;
-  font-weight: 900;
-}
-
-
-.top-fixed {
-  max-width: 100%;
-  height: 70px;
-  margin: 0 auto;
-  padding: 0 1% 0;
-}
-
 .contact-top {
   margin: 17px 10px;
   text-align: center;
@@ -258,19 +242,13 @@ textarea {
   background-color: #48bf7c;
 }
 
-
-
-
-
-
 .introduction {
   width: 100%;
-  height: 1205px;
+  height: 1160px;
   background-color: #fff;
   text-align: center;
   padding: 50px 8% 0;
   overflow: hidden;
-
 }
 
 .intro, 
@@ -367,7 +345,6 @@ textarea {
   float: right;
 }
 
-
 .groceries-delivery {
   width: 100%;
   padding-top: 42px;
@@ -460,7 +437,6 @@ textarea {
   color: #fff;
   margin-bottom: 30px;
   text-align: center;
-
 }
 
 .emojis-group {
@@ -525,7 +501,6 @@ textarea {
 
 .main-services-wrap {
   margin-right: 50px;
-
 }
 
 .services-wrap {
@@ -569,7 +544,6 @@ textarea {
   max-height: 703px;
   float: left;
 }
-
 
 .app-checkout {
   width: 100%;
@@ -651,17 +625,17 @@ textarea {
 }
 
 .people {
-  margin-top: 50px;
+  margin: 50px 50px 0 0;
   max-height: 210px;
 }
 
 .reorder-ico {
-  margin-top: 70px;
+  margin: 70px 0 0 70px;
   max-height: 190px;
 }
 
 .status-ico {
-  margin-top: 120px;
+  margin: 120px 110px 0 0;
   max-height: 145px;
 }
 
@@ -676,10 +650,6 @@ textarea {
   font-weight: 500;
   margin-bottom: 30px;
   color: #fff;
-}
-
-input[type="email-bottom"] {
-  border: 1px rgb(230,230,230) solid;
 }
 
 .app-partners {
@@ -734,6 +704,7 @@ input[type="email-bottom"] {
 }
 
 footer {
+  padding: 0 2%;
   border-top: 1px #e6e6e6 solid;
   background-color: #fff;
   color: #a0a0a0;
@@ -810,82 +781,6 @@ MEDIA QUERIES
   display: block;
 }
 
-.note {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  height: 1060px;
-}
-
-.left-elem {
-  opacity: 0.23;
-}
-
-.right-elem {
-  opacity: 0.23;
-}
-
-.zep-wrap {
-  padding-top: 50px;
-  height: 710px;
-}
-
-.flesy-container {
-  flex-direction: column;
-}
-
-.flesy-text {
-  max-width: 700px;
-}
-
-.flesy-d {
-  display: none;
-}
-
-.flesy-t {
-  margin-top: 45px;
-  margin-right: 0;
-  order: 1;
-  padding: 0 5% 0;
-}
-
-.flesy-logo {
-  margin-top: 50px;
-}
-
-.floating {
-  padding: 0 1% 0;
-}
-
-.sensorize-wrap {
-  padding-top: 60px;
-  height: 770px;
-}
-
-.sensorize-description {
-  text-align: center;
-  margin: 0 auto 30px;
-  float: none;
-}
-
-.sensorize-mockup {
-  float: none;
-}
-
-.sensorize-logo {
-  padding: 0 8% 0;
-}
-
-.sensorize-text {
-  text-align: center;
-}
-
-footer {
-  padding-top: 28px;
-}
-
-.foot {
-  font-size: 1.25em;
-}
 
 
 }
@@ -896,92 +791,132 @@ footer {
   display: block;
 }
 
-.note {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  height: 1060px;
+.groceries-description,
+.helpr-description,
+.services-description,
+.reclaim-description,
+.status-description,
+.reorder-description,
+.cleaning-description,
+.laundry-description,
+.status-description,
+.reorder-description,
+.reclaim-description {
+  max-width: 520px;
+  text-align: center;
 }
 
-.desc {
-  font-size: 1.8em;
-    margin-bottom: 50px;
+.introduction {
+  height: 1180px;
 }
 
-.quote {
-  padding: 0 10% 0;
-  font-size: 1.4em;
+.groceries-delivery,
+.do-laundry {
+  height: 1100px;
 }
 
-.left-elem {
-  opacity: 0.23;
+.reclaim-life {
+  height: 1500px;
 }
 
-.right-elem {
-  opacity: 0.23;
+.house-cleaning {
+  height: 938px;
 }
 
-.zep-wrap {
-  padding-top: 50px;
-  height: 710px;
+.cleaning-wrap,
+.laundry-wrap,
+.groceries-wrap,
+.services-wrap,
+.iphone-group,
+.status-wrap,
+.reorder-wrap,
+.reclaim-wrap,
+.iphone-2,
+.iphone-3,
+.iphone-4,
+.status-icon,
+.reorder-icon,
+.people-icon {
+   float: none;
+   text-align: center;
 }
 
-.flesy-container {
-  flex-direction: column;
+.laundry-wrap {
+  margin: 0 auto;
 }
 
-.flesy-text {
-  max-width: 700px;
-}
-
-.flesy-d {
-  display: none;
-}
-
-.flesy-t {
-  margin-top: 45px;
-  margin-right: 0;
-  order: 1;
-  padding: 0 5% 0;
-}
-
-.flesy-logo {
+.iphone-2 {
   margin-top: 50px;
 }
 
-.floating {
-  padding: 0 1% 0;
+.iphone-4  {
+  margin: 0 auto;
 }
 
-.sensorize-wrap {
-  padding-top: 60px;
-  height: 770px;
-}
-
-.sensorize-description {
-  text-align: center;
-  margin: 0 auto 30px;
-  float: none;
-}
-
-.sensorize-mockup {
-  float: none;
-}
-
-.sensorize-logo {
-  padding: 0 8% 0;
-}
-
-.sensorize-text {
+.home-services {
   text-align: center;
 }
 
-footer {
-  padding-top: 28px;
+.cleaning-title,
+.cleaning,
+.groceries-title,
+.groceries,
+.laundry-title,
+.laundry,
+.services-title,
+.services,
+.status {
+  text-align: center;
 }
 
-.foot {
-  font-size: 1.25em;
+.cleaning-title,
+.groceries-title,
+.laundry-title,
+.services-title {
+  margin-top: 30px;
 }
+
+.main-services-wrap,
+.services,
+.services-wrap {
+  margin: 0 auto;
+}
+
+.services-description {
+  margin: 10px 0 55px 0;
+}
+
+.checkout {
+  margin-top: 90px;
+}
+
+.reclaim-life {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.status-main {
+  height: 330px;
+}
+
+.reorder-main,
+.reclaim-main {
+  height: 400px;
+}
+
+.status-ico,
+.reorder-ico,
+.people {
+  margin: 50px auto 80px;
+}
+
+.status-wrap,
+.reorder-wrap,
+.reclaim-wrap {
+  max-width: 700px;
+}
+
+
 
 }
 
@@ -989,169 +924,257 @@ footer {
 
 @media screen and (max-width: 480px) and (min-width: 321px) {
 
-
-.logo-header {
-  background-size: 180x 180px;
-  max-height: 90px;
-}
-
-.arrow-top {
-    background-size: 46px 24px;
-    max-height: 12px;
+.introduction,
+.house-cleaning,
+.groceries-delivery,
+.helpr-free,
+.do-laundry,
+.home-services,
+.app-checkout,
+.reclaim-life,
+.app-partners,
+.early-access {
+  padding: 0 5%;
 }
 
 h1 {
-  font-size: 1.25em;
-  letter-spacing: 1px;
+  font-size: 2.3em;
 }
 
-.desc {
-  margin: 3px 0 20px;
-  font-size: 1em;
+.tagline {
+  max-width: 400px;
 }
 
-.quote {
-  font-size: 1em;
-  line-height: 1.6;
-  padding: 0 6.5% 0;
+.field-wrap input, 
+textarea, button {
+  width: 350px;
 }
 
-.contact-fixed {
-  padding: 0.6em 0.6em;
-  margin-right: 2px;
+.field-wrap button {
+  margin: 10px auto 0;
+  width: 350px;
 }
 
-.contact-top {
-  padding: 0.6em 0.6em;
-  margin-right: 5px;
+.intro, 
+.cleaning,
+.groceries,
+.helpr,
+.laundry,
+.services,
+.checkout,
+.partners,
+.reclaim,
+.status,
+.reorder {
+  font-size: 1.45em;
 }
 
-.icons {
-  margin-top: 25px;
+.intro {
+  margin-top: 55px;
 }
 
-.icon-medium-fixed {
-  margin-top: 8px;
+.early {
+  font-size: 1.2em;
 }
 
-.note {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  height: 1125px;
+.intro-description,
+.groceries-description,
+.helpr-description,
+.services-description,
+.reclaim-description,
+.status-description,
+.reorder-description,
+.cleaning-description,
+.laundry-description,
+.status-description,
+.reorder-description,
+.reclaim-description {
+  max-width: 520px;
+  text-align: center;
+  font-size: 1.1em;
 }
 
-.note-about-me, .recent-work {
-  font-size: 1.25em;
+.introduction {
+  height: 1130px;
 }
 
-.note-about-me:before, .recent-work:before {
-  background-size: 22px 22px;
-  padding-left: 35px;
+.groceries-delivery,
+.do-laundry {
+  height: 1100px;
 }
 
-.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
-  font-size: 1.05em;
-  line-height: 1.55;
+.reclaim-life {
+  height: 1500px;
 }
 
-.work-text {
-  padding: 0 5% 0;
-  margin-bottom: 40px;
+.house-cleaning {
+  height: 665px;
 }
 
-.left-elem {
-  margin: -700px 0 0 -55%;
-  background-size: 304px 742px;
-  width: 304px;
-  height: 742px;
-  float: left;
-  opacity: 0.23;
+.app-partners {
+  height: 715px;
 }
 
-.right-elem {
-  margin: -1420px -55% 0 0;
-  background-size: 353px 852px;
-  width: 353px;
-  height: 852px;
-  float: right;
-  opacity: 0.23;
+.early-access {
+  height: 282px;
 }
 
-.zep-wrap {
-  padding-top: 60px;
-  height: 650px;
+.groceries-delivery {
+  height: 1200px;
 }
 
-.zep-device {
-  padding: 0 2% 0;
+.helpr-wrap {
+  padding-top: 62px;
 }
 
-.flesy-container {
-  flex-direction: column;
+.cleaning-wrap,
+.laundry-wrap,
+.groceries-wrap,
+.services-wrap,
+.iphone-group,
+.status-wrap,
+.reorder-wrap,
+.reclaim-wrap,
+.iphone-2,
+.iphone-3,
+.iphone-4,
+.status-icon,
+.reorder-icon,
+.people-icon {
+   float: none;
+   text-align: center;
 }
 
-.flesy-d {
-  display: none;
+.laundry-wrap {
+  margin: 0 auto;
 }
 
-.flesy-t {
-  margin-top: 45px;
-  margin-right: 0;
-  order: 1;
-  padding: 0 5% 0;
+.cleaning-title,
+.groceries-title,
+.laundry-title,
+.services-title {
+  padding-top: 40px;
 }
 
-.flesy-logo {
+.iphone-2 {
   margin-top: 50px;
 }
 
-.floating {
-  padding: 0 3% 0;
+.iphone-4  {
+  margin: 0 auto;
 }
 
-.sensorize-wrap {
-  padding-top: 60px;
-  height: 820px;
-}
-
-.sensorize-description {
-  text-align: center;
-  margin: 0 0 35px;
-}
-
-.sensorize-logo {
-  padding: 0 8% 0;
-}
-
-.sensorize-text {
+.home-services {
   text-align: center;
 }
 
-.agroeste-container {
-  padding-top: 55px;
+.cleaning-title,
+.cleaning,
+.groceries-title,
+.groceries,
+.laundry-title,
+.laundry,
+.services-title,
+.services,
+.status {
+  text-align: center;
 }
 
-footer {
-  height: 50px;
-  padding-top: 20px;
-  font-size: 0.95em;
+.cleaning-title,
+.groceries-title,
+.laundry-title,
+.services-title {
+  margin-top: 30px;
 }
 
-.foot {
-  display: inline;
+.main-services-wrap,
+.services,
+.services-wrap {
+  margin: 0 auto;
 }
 
-.chat {
-  font-size: 2.5em;
+.services-description {
+  margin: 10px 0 55px 0;
 }
 
-p.more {
-  margin: 0 0 30px;
-  font-size: 1.1em;
-  line-height: 1.2;
+.app-checkout {
+  height: 1000px;
+}
+.checkout {
+  margin-top: 90px;
 }
 
+.screens {
+  max-width: 2200px;
+  margin-left: -80px;
+}
 
+.reclaim-life {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.status-main {
+  height: 330px;
+}
+
+.reorder-main,
+.reclaim-main {
+  height: 400px;
+}
+
+.status-ico,
+.reorder-ico,
+.people {
+  margin: 50px auto 80px;
+}
+
+.status-wrap,
+.reorder-wrap,
+.reclaim-wrap {
+  max-width: 700px;
+}
+
+.instacart,
+.handy,
+.fc,
+.taskrabbit,
+.cleanly {
+  margin: 22px 50px;
+}
+
+.partners {
+  margin-top: 75px;
+}
+
+.partners-description {
+  margin-bottom: 30px;
+}
+
+.footer-wrap {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-direction: column
+}
+
+.footer-right {
+  order: 1;
+  margin: 12px 0;
+}
+
+.email-contact {
+  order: 2;
+  margin-bottom: 27px;
+}
+
+.mixpanel {
+  order: 3;
+  margin-bottom: 16px;
+}
 
 }
 
@@ -1173,165 +1196,260 @@ FIM
 
         ************************************/
 
-.logo-header {
-  background-size: 180x 180px;
-  max-height: 90px;
-}
-
-.arrow-top {
-    background-size: 46px 24px;
-    max-height: 12px;
+.introduction,
+.house-cleaning,
+.groceries-delivery,
+.helpr-free,
+.do-laundry,
+.home-services,
+.app-checkout,
+.reclaim-life,
+.app-partners,
+.early-access {
+  padding: 0 5%;
 }
 
 h1 {
-  font-size: 1.25em;
-  letter-spacing: 1px;
+  font-size: 2.3em;
 }
 
-.desc {
-  margin: 3px 0 20px;
-  font-size: 1em;
+.tagline {
+  max-width: 400px;
 }
 
-.quote {
-  font-size: 1em;
-  line-height: 1.6;
-  padding: 0 6.5% 0;
+.field-wrap input, 
+textarea, button {
+  width: 280px;
 }
 
-.contact-fixed {
-  padding: 0.6em 0.6em;
-  margin-right: 2px;
+.field-wrap button {
+  margin: 10px auto 0;
+  width: 280px;
 }
 
-.contact-top {
-  padding: 0.6em 0.6em;
-  margin-right: 5px;
+.intro, 
+.cleaning,
+.groceries,
+.helpr,
+.laundry,
+.services,
+.checkout,
+.partners,
+.reclaim,
+.status,
+.reorder {
+  font-size: 1.45em;
 }
 
-.icons {
-  margin-top: 25px;
+.intro {
+  margin-top: 55px;
 }
 
-.icon-medium-fixed {
-  margin-top: 8px;
+.early {
+  font-size: 1.2em;
 }
 
-.note {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  height: 1415px;
+.intro-description,
+.groceries-description,
+.helpr-description,
+.services-description,
+.reclaim-description,
+.status-description,
+.reorder-description,
+.cleaning-description,
+.laundry-description,
+.status-description,
+.reorder-description,
+.reclaim-description {
+  max-width: 520px;
+  text-align: center;
+  font-size: 1.1em;
 }
 
-.note-about-me, .recent-work {
-  font-size: 1.25em;
+.introduction {
+  height: 1130px;
 }
 
-.note-about-me:before, .recent-work:before {
-  background-size: 22px 22px;
-  padding-left: 35px;
+.groceries-delivery,
+.do-laundry {
+  height: 1100px;
 }
 
-.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
-  font-size: 1.05em;
-  line-height: 1.55;
+.reclaim-life {
+  height: 1500px;
 }
 
-.work-text {
-  padding: 0 5% 0;
-  margin-bottom: 40px;
+.house-cleaning {
+  height: 665px;
 }
 
-.left-elem {
-  margin: -700px 0 0 -55%;
-  background-size: 304px 742px;
-  width: 304px;
-  height: 742px;
-  float: left;
-  opacity: 0.23;
+.app-partners {
+  height: 715px;
 }
 
-.right-elem {
-  margin: -1420px -55% 0 0;
-  background-size: 353px 852px;
-  width: 353px;
-  height: 852px;
-  float: right;
-  opacity: 0.23;
+.early-access {
+  height: 282px;
 }
 
-.zep-wrap {
-  padding-top: 60px;
-  height: 650px;
+.groceries-delivery {
+  height: 1200px;
 }
 
-.zep-device {
-  padding: 0 2% 0;
+.helpr-wrap {
+  padding-top: 62px;
 }
 
-.flesy-container {
-  flex-direction: column;
+.cleaning-wrap,
+.laundry-wrap,
+.groceries-wrap,
+.services-wrap,
+.iphone-group,
+.status-wrap,
+.reorder-wrap,
+.reclaim-wrap,
+.iphone-2,
+.iphone-3,
+.iphone-4,
+.status-icon,
+.reorder-icon,
+.people-icon {
+   float: none;
+   text-align: center;
 }
 
-.flesy-d {
-  display: none;
+.laundry-wrap {
+  margin: 0 auto;
 }
 
-.flesy-t {
-  margin-top: 45px;
-  margin-right: 0;
-  order: 1;
-  padding: 0 5% 0;
+.cleaning-title,
+.groceries-title,
+.laundry-title,
+.services-title {
+  padding-top: 40px;
 }
 
-.flesy-logo {
+.iphone-2 {
   margin-top: 50px;
 }
 
-.floating {
-  padding: 0 3% 0;
+.iphone-4  {
+  margin: 0 auto;
 }
 
-.sensorize-wrap {
-  padding-top: 60px;
-  height: 770px;
-}
-
-.sensorize-description {
-  text-align: center;
-  margin: 0 0 35px;
-}
-
-.sensorize-logo {
-  padding: 0 8% 0;
-}
-
-.sensorize-text {
+.home-services {
   text-align: center;
 }
 
-.agroeste-container {
-  padding-top: 55px;
+.cleaning-title,
+.cleaning,
+.groceries-title,
+.groceries,
+.laundry-title,
+.laundry,
+.services-title,
+.services,
+.status {
+  text-align: center;
 }
 
-footer {
-  padding-top: 20px;
-  font-size: 0.95em;
+.cleaning-title,
+.groceries-title,
+.laundry-title,
+.services-title {
+  margin-top: 30px;
 }
 
-.foot {
-  display: inline;
+.main-services-wrap,
+.services,
+.services-wrap {
+  margin: 0 auto;
 }
 
-.chat {
-  font-size: 2.5em;
+.services-description {
+  margin: 10px 0 55px 0;
 }
 
-p.more {
-  margin: 0 0 30px;
-  font-size: 1.1em;
-  line-height: 1.2;
+.app-checkout {
+  height: 1000px;
 }
+
+.checkout {
+  margin-top: 90px;
+}
+
+.screens {
+  max-width: 2200px;
+  margin-left: -80px;
+}
+
+.reclaim-life {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.status-main {
+  height: 330px;
+}
+
+.reorder-main,
+.reclaim-main {
+  height: 400px;
+}
+
+.status-ico,
+.reorder-ico,
+.people {
+  margin: 50px auto 80px;
+}
+
+.status-wrap,
+.reorder-wrap,
+.reclaim-wrap {
+  max-width: 700px;
+}
+
+.instacart,
+.handy,
+.fc,
+.taskrabbit,
+.cleanly {
+  margin: 22px 10px;
+}
+
+
+.partners {
+  margin-top: 75px;
+}
+
+.partners-description {
+  margin-bottom: 30px;
+}
+
+.footer-wrap {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-direction: column
+}
+
+.footer-right {
+  order: 1;
+  margin: 12px 0;
+}
+
+.email-contact {
+  order: 2;
+  margin-bottom: 27px;
+}
+
+.mixpanel {
+  order: 3;
+  margin-bottom: 16px;
+}
+
 
 
 
@@ -1366,7 +1484,7 @@ footer {
 
         ************************************/
 
-.arrow-top {
+.arrow {
     background-size: 46px 24px;
     max-height: 12px;
 }
@@ -1382,49 +1500,8 @@ h1 {
   margin-bottom: 7px;
 }
 
-.desc {
-  margin: 0 0 20px;
-  font-size: 1.1em;
-}
 
-.note {
-  height: 1395px;
-}
 
-.note-about-me, .recent-work {
-  font-size: 1.4em;
-}
-
-.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.work-text {
-  padding: 0 12% 0;
-}
-
-.zep-wrap {
-  height: 660px;
-}
-
-.sensorize-wrap {
-  height: 785px;
-}
-
-.agroeste-device {
-  padding-bottom: 35px;
-}
-
-p.more {
-  padding: 0 20% 0;
-}
-
-footer {
-  padding-top: 20px;
-  height: 50px;
-  font-size: 0.95em;
-}
 
 }
 
@@ -1450,7 +1527,7 @@ FIM
   max-height: 137px;
 }
 
-.arrow-top {
+.arrow {
     background-size: 54px 32px;
     max-height: 16px;
 }
@@ -1459,82 +1536,6 @@ h1 {
   font-size: 1.7em;
   letter-spacing: 1px;
   margin-bottom: 7px;
-}
-
-.desc {
-  margin: 0 0 30px;
-  font-size: 1.25em;
-}
-
-.quote {
-  font-size: 1.15em;
-  padding: 0 12% 0;
-}
-
-.note {
-  padding-top: 45px;
-  padding-bottom: 45px;
-  height: 1725px;
-}
-
-.note-about-me, .recent-work {
-  font-size: 1.5em;
-}
-
-.note-text, .work-text, .ccb-text, .zep-text, .flesy-text, .agroeste-text {
-  font-size: 1.3em;
-}
-
-.work-text {
-  padding: 0 10% 0;
-}
-
-.ccb-devices {
-  margin-bottom: 75px;
-}
-
-.zep-wrap {
-  padding-top: 80px;
-  height: 770px;
-}
-
-.flesy-logo {
-  margin-top: 60px;
-}
-
-.sensorize-description {
-  margin-top: 10px;
-}
-
-.sensorize-wrap {
-  height: 860px;
-}
-
-.agroeste-container {
-  padding-top: 60px;
-}
-
-.agroeste-device {
-  padding-bottom: 40px;
-}
-
-.contact-wrap {
-  padding-top: 45px;
-}
-
-.chat {
-  font-size: 2.7em;
-}
-
-p.more {
-  padding: 0 15% 0;
-  font-size: 1.25em;
-}
-
-footer {
-  padding-top: 19px;
-  height: 50px;
-  font-size: 1em;
 }
 
 

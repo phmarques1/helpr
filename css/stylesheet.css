@@ -946,7 +946,7 @@ h1 {
 }
 
 .field-wrap input, 
-textarea, button {
+textarea {
   width: 350px;
 }
 
@@ -1209,17 +1209,30 @@ FIM
   padding: 0 5%;
 }
 
+.logo {
+  float: none;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.contact-top {
+  display: none;
+}
+
 h1 {
-  font-size: 2.3em;
+  font-size: 1.65em;
 }
 
 .tagline {
   max-width: 400px;
+  font-size: 1.05em;
+  line-height: 1.6;
 }
 
 .field-wrap input, 
-textarea, button {
+textarea {
   width: 280px;
+  font-size: 0.95em;
 }
 
 .field-wrap button {
@@ -1246,7 +1259,7 @@ textarea, button {
 }
 
 .early {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .intro-description,
@@ -1263,36 +1276,43 @@ textarea, button {
 .reclaim-description {
   max-width: 520px;
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1em;
+}
+
+.intro-description {
+  margin-bottom: 40px;
 }
 
 .introduction {
-  height: 1130px;
-}
-
-.groceries-delivery,
-.do-laundry {
-  height: 1100px;
-}
-
-.reclaim-life {
-  height: 1500px;
+  height: 910px;
 }
 
 .house-cleaning {
-  height: 665px;
+  height: 575px;
+}
+
+.groceries-delivery {
+  height: 1020px;
+}
+
+.helpr-free {
+  height: 400px;
+}
+
+.do-laundry {
+  height: 975px;
+}
+
+.reclaim-life {
+  height: 1275px;
 }
 
 .app-partners {
-  height: 715px;
+  height: 775px;
 }
 
 .early-access {
   height: 282px;
-}
-
-.groceries-delivery {
-  height: 1200px;
 }
 
 .helpr-wrap {
@@ -1325,11 +1345,15 @@ textarea, button {
 .groceries-title,
 .laundry-title,
 .services-title {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .iphone-2 {
   margin-top: 50px;
+}
+
+.iphone-3 {
+  margin-top: 40px;
 }
 
 .iphone-4  {
@@ -1366,7 +1390,7 @@ textarea, button {
 }
 
 .services-description {
-  margin: 10px 0 55px 0;
+  margin: 10px 0 40px 0;
 }
 
 .app-checkout {
@@ -1388,24 +1412,34 @@ textarea, button {
 }
 
 .status-main {
-  height: 330px;
+  height: 310px;
 }
 
 .reorder-main,
 .reclaim-main {
-  height: 400px;
+  height: 325px;
 }
 
 .status-ico,
 .reorder-ico,
 .people {
-  margin: 50px auto 80px;
+  margin: 30px auto;
+  max-height: 130px;
 }
+
+.status-ico {
+  max-height: 110px;
+}
+
 
 .status-wrap,
 .reorder-wrap,
 .reclaim-wrap {
   max-width: 700px;
+}
+
+.status-wrap {
+  margin-top: 70px;
 }
 
 .instacart,
@@ -1416,9 +1450,8 @@ textarea, button {
   margin: 22px 10px;
 }
 
-
 .partners {
-  margin-top: 75px;
+  margin-top: 65px;
 }
 
 .partners-description {
@@ -1484,24 +1517,83 @@ footer {
 
         ************************************/
 
-.arrow {
-    background-size: 46px 24px;
-    max-height: 12px;
+.logo {
+  font-size: 1.7em;
 }
-
-.logo-header {
-  background-size: 274px 274px;
-  max-height: 137px;
-}
-
 h1 {
-  font-size: 1.5em;
-  letter-spacing: 1px;
-  margin-bottom: 7px;
+  font-size: 1.85em;
+}
+
+.tagline {
+  max-width: 300px;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+.field-wrap input, 
+textarea {
+  width: 300px;
+  font-size: 0.95em;
+}
+
+.field-wrap button {
+  margin: 10px auto 0;
+  width: 300px;
 }
 
 
+.introduction {
+  height: 965px;
+}
 
+.house-cleaning {
+  height: 620px;
+}
+
+.groceries-delivery {
+  height: 1110px;
+}
+
+.helpr-free {
+  height: 370px;
+}
+
+.do-laundry {
+  height: 1045px;
+}
+
+.reclaim-life {
+  height: 1225px;
+}
+
+.app-partners {
+  height: 740px;
+}
+
+.early-access {
+  height: 280px;
+}
+
+.status-main {
+  height: 280px;
+}
+
+.reorder-main,
+.reclaim-main {
+  height: 325px;
+}
+
+.instacart,
+.handy,
+.fc,
+.taskrabbit,
+.cleanly {
+  margin: 22px 15px;
+}
+
+.mixpanel {
+  margin-bottom: 30px;
+}
 
 }
 
@@ -1522,22 +1614,89 @@ FIM
 
         ************************************/
 
-.logo-header {
-  background-size: 274px 274px;
-  max-height: 137px;
+.logo {
+  font-size: 1.85em;
 }
-
-.arrow {
-    background-size: 54px 32px;
-    max-height: 16px;
-}
-
 h1 {
-  font-size: 1.7em;
-  letter-spacing: 1px;
-  margin-bottom: 7px;
+  font-size: 2em;
 }
 
+.tagline {
+  max-width: 300px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.field-wrap input, 
+textarea {
+  width: 340px;
+  font-size: 1.1em;
+}
+
+.field-wrap button {
+  margin: 10px auto 0;
+  width: 340px;
+  font-size: 1.2em;
+}
+
+.introduction {
+  height: 1005px;
+}
+
+.house-cleaning {
+  height: 627px;
+}
+
+.groceries-delivery {
+  height: 1175px;
+}
+
+.helpr-free {
+  height: 340px;
+}
+
+.do-laundry {
+  height: 1055px;
+}
+
+.reclaim-life {
+  height: 1190px;
+}
+
+.app-partners {
+  height: 765px;
+}
+
+.partners {
+  margin: 65px auto 0;
+  max-width: 300px;
+  line-height: 1.65em;
+}
+
+.early-access {
+  height: 280px;
+}
+
+.early {
+  font-size: 1.2em;
+}
+
+.status-main {
+  height: 280px;
+}
+
+.reorder-main,
+.reclaim-main {
+  height: 297px;
+}
+
+.instacart,
+.handy,
+.fc,
+.taskrabbit,
+.cleanly {
+  margin: 22px 30px;
+}
 
 
 }

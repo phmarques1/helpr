@@ -38,21 +38,6 @@ header {
     z-index: 1000000;
 }
 
-header.clonedHeader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    transform: translateY(-100%);
-    border-bottom: 1px solid rgb(210,210,210);
-    transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
-}
-
-body.down header.clonedHeader {
-    transform: translateY(0);
-}
-
 .logo {
   float: left;
   margin: 20px 5px 0;
@@ -1491,16 +1476,10 @@ FIM
 
 *****************/
 
-@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
-.note {
-  height: 1285px;
-}
+/*@media screen and (min-device-width: 360px) and (max-device-width: 640px) {
 
-footer {
-  padding-top: 10px;
-}
 
-}
+}*/
 
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {

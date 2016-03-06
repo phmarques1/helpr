@@ -73,55 +73,5 @@ $(".contact-top").click(function() {
 });
 
 
-/* 
-$(document).ready(function() {
 
-        $( ".close" ).hide();
-        $( ".menu_responsive" ).show();
-
-
-
-        $( ".menu_responsive" ).click(function() {
-           
-            $( ".menu_responsive" ).hide();
-            $( ".close" ).show();
-            $( ".top-fixed" ).show();
-            $(".mobile_header").css("background-color", "white");
-            $( ".mobile" ).show();
-
-                $(window).on("resize", function() {
-                    if (parseInt($(window).width()) > 768) {
-                        $( ".mobile" ).hide();
-                        $( ".top-fixed" ).hide();
-                        $(".mobile_header").css("background-color", "transparent");
-                        $( ".close" ).hide();
-                        $( ".menu_responsive" ).show();
-                } 
-
-                });
-
-        /*$( "" ).slideToggle( "slow", function() {
-            
-
- 
-
-
-            });
-
-        });
-
-
-
-
-        $( ".close" ).click(function() {
-            
-            $( ".top-fixed" ).hide();
-            $( ".mobile" ).hide();
-            $( ".close" ).hide();
-            $(".mobile_header").css("background-color", "transparent");
-            $( ".menu_responsive" ).show();
-        });
-   
-
-}); */
 

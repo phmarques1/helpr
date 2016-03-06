@@ -1374,7 +1374,7 @@ textarea {
 }
 
 .app-checkout {
-  height: 1000px;
+  height: 900px;
 }
 
 .checkout {
@@ -1382,8 +1382,8 @@ textarea {
 }
 
 .screens {
-  max-width: 2200px;
-  margin-left: -80px;
+  max-width: 230%;
+  margin-left: -50px;
 }
 
 .reclaim-life {
@@ -1552,6 +1552,10 @@ textarea {
   height: 280px;
 }
 
+.app-checkout {
+  height: 950px;
+}
+
 .reorder-main,
 .reclaim-main {
   height: 325px;
@@ -1697,6 +1701,10 @@ textarea {
 
 .status-main {
   height: 300px;
+}
+
+.app-checkout {
+  height: 1000px;
 }
 
 .reorder-main,
